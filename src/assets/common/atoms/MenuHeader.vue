@@ -31,16 +31,16 @@ export default {
   },
   methods: {
     toScroll () {
-      const blueLeft = document.getElementById("contact").getBoundingClientRect().left;
-      const blueTop = document.getElementById("contact").getBoundingClientRect().top;
+      const blueLeft = document.getElementById('contact').getBoundingClientRect().left
+      const blueTop = document.getElementById('contact').getBoundingClientRect().top
       window.scrollTo({
         left: blueLeft,
         top: blueTop,
         behavior: 'smooth'
-      });
+      })
     },
-    toggleElement() {
-      this.isElementVisible = !this.isElementVisible; // 表示と非表示を切り替え
+    toggleElement () {
+      this.isElementVisible = !this.isElementVisible // 表示と非表示を切り替え
     }
   }
 }

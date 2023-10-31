@@ -51,16 +51,16 @@ const router = new Router({
       return { x: 0, y: 0 }
     }
   }
-});
+})
 
 router.beforeEach((to, from, next) => {
-  console.log('------------beforeEach');
+  console.log('------------beforeEach')
   // TODO カスタムモードを使わない場合は、ここをコメントアウトすること + review.jsの修正
-  // const fullstar = new CustomEvent('fullstar_spa')
-  // window.dispatchEvent(fullstar)
+  const fullstar = new CustomEvent('fullstar_spa')
+  window.dispatchEvent(fullstar)
   // TODO ここまで
 
-  next(); // ルート遷移を許可
-});
+  next() // ルート遷移を許可
+})
 
-export default router;
+export default router
