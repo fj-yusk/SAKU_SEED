@@ -55,9 +55,11 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   console.log('------------beforeEach');
-  // ここに処理を追加
-  const fullstar = new CustomEvent('fullstar_spa')
-  window.dispatchEvent(fullstar)
+  // TODO カスタムモードを使わない場合は、ここをコメントアウトすること + review.jsの修正
+  // const fullstar = new CustomEvent('fullstar_spa')
+  // window.dispatchEvent(fullstar)
+  // TODO ここまで
+
   next(); // ルート遷移を許可
 });
 
