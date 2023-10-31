@@ -9,6 +9,8 @@
       </ul>
       <a href="#contact"><input type="button" value="お問い合わせ リンク" /></a>
       <input type="button" value="お問い合わせ js" @click="toScroll" />
+      <button @click="toggleElement">切り替え</button>
+      <div v-if="isElementVisible">この要素を切り替えます</div>
     </div>
 </template>
 
@@ -23,7 +25,8 @@ export default {
         { title: 'header.news', path: '/news' },
         { title: 'header.movie', path: '/movie' },
         { title: 'header.stage', path: '/stage' }
-      ]
+      ],
+      isElementVisible: false // 初めは非表示
     }
   },
   methods: {
@@ -35,6 +38,9 @@ export default {
         top: blueTop,
         behavior: 'smooth'
       });
+    },
+    toggleElement() {
+      this.isElementVisible = !this.isElementVisible; // 表示と非表示を切り替え
     }
   }
 }
