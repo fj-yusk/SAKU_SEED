@@ -1,5 +1,5 @@
 <template>
-  <div class="margin">
+  <div id="contact" class="margin">
     <title-label
       :title="$t('contact.title')"
     ></title-label>

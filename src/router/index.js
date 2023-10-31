@@ -9,7 +9,9 @@ import membersOnly from '../assets/view/js/components/membersOnly'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
+  // ルート設定
+// mode: 'history',
   routes: [
     {
       path: '/',
@@ -49,4 +51,14 @@ export default new Router({
       return { x: 0, y: 0 }
     }
   }
-})
+});
+
+router.beforeEach((to, from, next) => {
+  console.log('------------beforeEach');
+  // ここに処理を追加
+  const fullstar = new CustomEvent('fullstar_spa')
+  window.dispatchEvent(fullstar)
+  next(); // ルート遷移を許可
+});
+
+export default router;

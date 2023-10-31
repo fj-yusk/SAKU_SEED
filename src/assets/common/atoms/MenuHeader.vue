@@ -7,6 +7,8 @@
           </router-link>
         </li>
       </ul>
+      <a href="#contact"><input type="button" value="お問い合わせ リンク" /></a>
+      <input type="button" value="お問い合わせ js" @click="toScroll" />
     </div>
 </template>
 
@@ -22,6 +24,17 @@ export default {
         { title: 'header.movie', path: '/movie' },
         { title: 'header.stage', path: '/stage' }
       ]
+    }
+  },
+  methods: {
+    toScroll () {
+      const blueLeft = document.getElementById("contact").getBoundingClientRect().left;
+      const blueTop = document.getElementById("contact").getBoundingClientRect().top;
+      window.scrollTo({
+        left: blueLeft,
+        top: blueTop,
+        behavior: 'smooth'
+      });
     }
   }
 }
