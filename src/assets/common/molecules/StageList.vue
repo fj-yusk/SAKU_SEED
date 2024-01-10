@@ -67,6 +67,7 @@ export default {
   font-size: 25px;
   padding: 20px 0 10px;
   border-bottom: solid 2px #1C1B18;
+  text-align: center;
 }
 .sub-title {
   font-size: 18px;

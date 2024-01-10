@@ -31,8 +31,7 @@ export default {
   data () {
     return {
       schedules: [
-        {title: 'コールマインフェスティバル', date: '11/4(土)~5(日)'},
-        {title: 'まつりふっとうてん', date: '11/12(日)'}
+        {title: 'なし', date: '-'}
       ]
     }
   }

@@ -67,6 +67,7 @@ export default {
 <style scoped>
 .movie-card {
   margin: 20px 50px;
+  text-align: center;
 }
 .movie {
   width: 360px;
@@ -76,5 +77,6 @@ export default {
   font-size: 23px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 </style>

@@ -31,7 +31,6 @@ body {
   font-family: 'Sawarabi Mincho', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #e1e6b5;
   margin: 0;
   background-color: #1C1B18;

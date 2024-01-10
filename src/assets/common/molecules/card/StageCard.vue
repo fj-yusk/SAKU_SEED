@@ -56,6 +56,10 @@ export default {
 
 <style scoped>
 
+.stage-card {
+  text-align: center;
+}
+
 .stage-name {
   color: rgb(218, 218, 112);
   margin: 0 0 10px;

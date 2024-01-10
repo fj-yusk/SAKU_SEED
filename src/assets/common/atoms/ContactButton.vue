@@ -15,6 +15,7 @@ export default {
 <style scoped>
 .contact {
   margin: 20px 0 30px;
+  text-align: center;
 }
 .form {
   color: #f5f5f5;

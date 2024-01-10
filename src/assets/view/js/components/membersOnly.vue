@@ -16,7 +16,9 @@
       :schedules="diggy_dan"
       :members="true"
     ></Schedule>
-    <iframe src="https://calendar.google.com/calendar/embed?src=voqtn0tt17hl3jginlbc0h92vo%40group.calendar.google.com&ctz=Asia%2FTokyo" class="calendar" frameborder="0" scrolling="no"></iframe>
+    <div style="text-align: center">
+      <iframe src="https://calendar.google.com/calendar/embed?src=voqtn0tt17hl3jginlbc0h92vo%40group.calendar.google.com&ctz=Asia%2FTokyo" class="calendar" frameborder="0" scrolling="no"></iframe>
+    </div>
     <div class="movie-all">
       <movie-card
         :movie-url="'https://www.youtube.com/embed/D9lU96O4kyc?loop=1&playlist=D9lU96O4kyc'"
@@ -32,6 +34,18 @@
       ></movie-card>
       <movie-card
         :movie-url="'https://www.youtube.com/embed/W75mL19VuQo?loop=1&playlist=W75mL19VuQo'"
+      ></movie-card>
+      <movie-card
+        :movie-url="'https://www.youtube.com/embed/Tp2kMRZdags?loop=1&playlist=Tp2kMRZdags'"
+      ></movie-card>
+      <movie-card
+        :movie-url="'https://www.youtube.com/embed/mRSpPDWQZpg?loop=1&playlist=mRSpPDWQZpg'"
+      ></movie-card>
+      <movie-card
+        :movie-url="'https://www.youtube.com/embed/1d1uNHkIQJs?loop=1&playlist=1d1uNHkIQJs'"
+      ></movie-card>
+      <movie-card
+        :movie-url="'https://www.youtube.com/embed/J6REHFlgV5M?loop=1&playlist=J6REHFlgV5M'"
       ></movie-card>
     </div>
     <div class="rule-intro">
@@ -77,15 +91,12 @@ export default {
       saku_seed: [
         {title: '練習日', date: '月2回開催', link: 'https://chouseisan.com/s?h=320dfe01d36746359749359500a8caa9'},
         {title: '役員ミーティング', date: '月1回開催', link: 'https://chouseisan.com/s?h=8a0b2b3fde32451686991ac23c7cd7dc'},
-        {title: '田川市政80周年記念式典', date: '11/3(金)', link: 'https://chouseisan.com/s?h=201fb604f70c4052b4b64c300eb3beec'},
-        {title: 'コールマインフェスティバル', date: '11/4(土)〜5(日)', link: 'https://chouseisan.com/s?h=7dbdb0a42d1e420d9bf5d63e1c605ab3'},
-        {title: 'まつりふっとうてん', date: '11/12(日)', link: 'https://chouseisan.com/s?h=090f2a81a4f94fb0b1f2ba2655c228ea'}
+        {title: '忘年会', date: '12/16(土)', link: 'https://chouseisan.com/s?h=e9990ff9935f41bbb43683db90cd01b0'},
+        {title: 'クリスマスイベント', date: '12/23(土)', link: 'https://chouseisan.com/s?h=437590008e5b4e48be5e288dd066cbbd'}
       ],
       diggy_dan: [
         {title: '練習日', date: '月2回開催', link: 'https://chouseisan.com/s?h=59967db65b7645f1b36b1dc810285e55'},
-        {title: '田川市政80周年記念式典', date: '11/03(金)', link: 'https://chouseisan.com/s?h=439180e1a15a4ca5b3229ca9163dadfb'},
-        {title: 'コールマインフェスティバル', date: '11/4(土)〜5(日)', link: 'https://chouseisan.com/s?h=f52cace2dd00416aafe39a4b9d3235a2'},
-        {title: 'まつりふっとうてん', date: '11/12(日)', link: 'https://chouseisan.com/s?h=401d9b4ae974425498e7b96370255b15'}
+        {title: 'クリスマスイベント', date: '12/23(土)', link: 'https://chouseisan.com/s?h=c5ab7d2da7284973aeb2b5c8809f3eac'}
       ]
     }
   }

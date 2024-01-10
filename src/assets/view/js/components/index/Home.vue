@@ -5,7 +5,7 @@
       :message2="$t('common.main_message2')"
     ></main-card>
     <main-board></main-board>
-    <stage-board></stage-board>
+<!--    <stage-board></stage-board>-->
     <team-board></team-board>
     <news-board></news-board>
     <movie-board></movie-board>

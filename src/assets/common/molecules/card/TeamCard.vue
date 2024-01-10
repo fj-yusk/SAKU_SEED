@@ -31,6 +31,7 @@ export default {
 .team-name {
   font-size: 30px;
   margin-top: 20px;
+  text-align: center;
 }
 
 /* 〜479px：SP縦

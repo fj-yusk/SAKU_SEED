@@ -26,6 +26,7 @@ export default {
   font-size: 50px;
   color: rgb(232, 241, 92);
   margin: 60px 0;
+  text-align: center;
 }
 .t2 {
   font-size: 18px;

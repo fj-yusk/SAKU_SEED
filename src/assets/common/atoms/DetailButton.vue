@@ -28,6 +28,7 @@ export default {
 <style scoped>
 .margin {
   margin: 40px 0;
+  text-align: center;
 }
 *,
 *:before,

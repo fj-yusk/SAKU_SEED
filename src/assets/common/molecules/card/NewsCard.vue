@@ -38,6 +38,9 @@ export default {
 
 <style scoped>
 
+.news-card {
+  text-align: center;
+}
 .news-title {
   font-size: 22px;
 }
