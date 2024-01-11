@@ -10,7 +10,6 @@ import membersOnly from '../assets/view/js/components/membersOnly'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
