@@ -4,18 +4,6 @@
     <title-label
       :title="'メンバー専用'"
     ></title-label>
-    <Schedule
-      :title="$t('common.saku_seed')"
-      :sub_title="'(リンクから調整さんへ飛べます)'"
-      :schedules="saku_seed"
-      :members="true"
-    ></Schedule>
-    <Schedule
-      :title="$t('common.diggy_dan')"
-      :sub_title="'(リンクから調整さんへ飛べます)'"
-      :schedules="diggy_dan"
-      :members="true"
-    ></Schedule>
     <div style="text-align: center">
       <iframe src="https://calendar.google.com/calendar/embed?src=voqtn0tt17hl3jginlbc0h92vo%40group.calendar.google.com&ctz=Asia%2FTokyo" class="calendar" frameborder="0" scrolling="no"></iframe>
     </div>
@@ -51,7 +39,7 @@
     <div class="rule-intro">
       <div class="rule-title">お願い</div>
       <p>1. 積極的な出演参加お願い致します(重要)</p>
-      <p>2. 調整さん回答は必須(不参加の場合のコメントも必須)</p>
+      <p>2. 出演出席回答は必須</p>
       <p>3. 会費は必ず納入お願い致します</p>
       <p>4. メンバー以外の控室への入室は禁止(保護者1名のみ可)</p>
       <p>5. メンバー外には、このページの共有はお控えください</p>
@@ -84,20 +72,6 @@ export default {
       inner: '月咲SEED公式HP',
       separator: '|',
       complement: 'メン限'
-    }
-  },
-  data () {
-    return {
-      saku_seed: [
-        {title: '練習日', date: '月2回開催', link: 'https://chouseisan.com/s?h=320dfe01d36746359749359500a8caa9'},
-        {title: '役員ミーティング', date: '月1回開催', link: 'https://chouseisan.com/s?h=8a0b2b3fde32451686991ac23c7cd7dc'},
-        {title: '忘年会', date: '12/16(土)', link: 'https://chouseisan.com/s?h=e9990ff9935f41bbb43683db90cd01b0'},
-        {title: 'クリスマスイベント', date: '12/23(土)', link: 'https://chouseisan.com/s?h=437590008e5b4e48be5e288dd066cbbd'}
-      ],
-      diggy_dan: [
-        {title: '練習日', date: '月2回開催', link: 'https://chouseisan.com/s?h=59967db65b7645f1b36b1dc810285e55'},
-        {title: 'クリスマスイベント', date: '12/23(土)', link: 'https://chouseisan.com/s?h=c5ab7d2da7284973aeb2b5c8809f3eac'}
-      ]
     }
   }
 }
