@@ -5,6 +5,27 @@
       :sub-title="$t('news.supplement')"
     ></title-label>
     <news-detail-card
+      :news-title="'グランピングKAWASAKI三周年イベント'"
+      :news-date="'2024/07/07'"
+      :news-article="'いつもお世話になっているオーナーのために、今回もメンバーみんなでお祝い！そしてキャンプを堪能させて頂きました！これからもお世話になります！！'"
+      :news-author="'フジ'"
+      :news-picture="'IMG_9013.jpg'"
+    ></news-detail-card>
+    <news-detail-card
+      :news-title="'ことこと列車お出迎え！'"
+      :news-date="'2024/07/07'"
+      :news-article="'福岡・大分ディスティネーションキャンペーン期間中、ことこと列車をご利用の皆様！炭坑節によるお出迎えはいかがでしたでしょうか？短い時間ではございましたが、一緒に炭坑節を踊れてとても楽しかったです！ことこと列車ご利用の際にもしかしたら、またお出迎えをすることがあるかも...またお会いできる日を楽しみにしております！！'"
+      :news-author="'フジ'"
+      :news-picture="'IMG_9014.jpg'"
+    ></news-detail-card>
+    <news-detail-card
+      :news-title="'ちょっくらじおにお邪魔してきました!'"
+      :news-date="'2024/04/11'"
+      :news-article="'月咲SEEDが久々にラジオにゲスト出演してきました！！ラジオ聴いてない...って方はYouTubeで「ちょっくらじお」で検索！！月咲SEEDボーカルのMEGが生歌を披露してくれてるぞ！'"
+      :news-author="'フジ'"
+      :news-picture="'183857.jpg'"
+    ></news-detail-card>
+    <news-detail-card
       :news-title="'夏祭り2連チャン！！'"
       :news-date="'2023/08/31'"
       :news-article="'8月26日は中央校区夏祭り、後藤寺夏祭りのダブル出演！！子供達も暑い中素晴らしいパフォーマンス！！久しぶりの開催、本当に楽しかったです！！'"
