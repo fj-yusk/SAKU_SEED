@@ -5,19 +5,21 @@
 </template>
 
 <script>
+import { useHead } from '@unhead/vue'
+
 export default {
   name: 'App',
-  components: {
-  },
-  head: {
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { name: 'google-site-verification', content: 'fCOdw9ODxphtZzgw__w6RqEB06GKuD-H6PauBng-o6k' }
-    ],
-    link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', integrity: 'sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay', crossorigin: 'anonymous' }
-    ]
+  setup () {
+    useHead({
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        { name: 'google-site-verification', content: 'fCOdw9ODxphtZzgw__w6RqEB06GKuD-H6PauBng-o6k' }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap' },
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', crossorigin: 'anonymous' }
+      ]
+    })
   }
 }
 </script>

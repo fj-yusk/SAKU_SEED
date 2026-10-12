@@ -1,16 +1,13 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Index from '../assets/view/js/components/index'
-import Team from '../assets/view/js/components/team'
-import News from '../assets/view/js/components/news'
-import Movie from '../assets/view/js/components/movie'
-import Stage from '../assets/view/js/components/stage'
-import membersOnly from '../assets/view/js/components/membersOnly'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Index from '@/views/HomeView'
+import Team from '@/views/TeamView'
+import News from '@/views/NewsView'
+import Movie from '@/views/MovieView'
+import Stage from '@/views/StageView'
+import membersOnly from '@/views/MembersOnlyView'
 
-Vue.use(Router)
-
-export default new Router({
-  mode: 'hash',
+export default createRouter({
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -47,7 +44,7 @@ export default new Router({
     if (savedPosition) {
       return savedPosition
     } else {
-      return { x: 0, y: 0 }
+      return { left: 0, top: 0 }
     }
   }
 })
