@@ -44,6 +44,33 @@
       <p>7. HP及びSNS投稿のための写真共有にご協力よろしくお願い致します</p>
       <p>8. 役員は、HP, スプレッドーシートに間違いがないかご確認よろしくお願い致します</p>
     </div>
+    <!-- 入力アシスト検証用フォーム（送信はしない） -->
+    <form id="fs-test-form" class="test-form" @submit.prevent>
+      <div class="rule-title">お問い合わせ（テスト用）</div>
+      <p class="test-form-row">
+        <label for="fs-name">氏名（必須）</label>
+        <input id="fs-name" name="fs-name" type="text" class="test-form-input">
+      </p>
+      <p class="test-form-row">
+        <label for="fs-kana">フリガナ（全角カタカナのみ）</label>
+        <input id="fs-kana" name="fs-kana" type="text" class="test-form-input">
+      </p>
+      <p class="test-form-row">
+        <label for="fs-zip">郵便番号（半角数字7桁）</label>
+        <input id="fs-zip" name="fs-zip" type="text" class="test-form-input">
+      </p>
+      <p class="test-form-row">
+        <label for="fs-company">会社名（「株」は入力不可）</label>
+        <input id="fs-company" name="fs-company" type="text" class="test-form-input">
+      </p>
+      <p class="test-form-row">
+        <label for="fs-message">お問い合わせ内容（10〜100文字）</label>
+        <textarea id="fs-message" name="fs-message" rows="4" class="test-form-input"></textarea>
+      </p>
+      <p class="test-form-row">
+        <button id="fs-submit" type="submit" class="test-form-submit">送信（テスト用・送信されません）</button>
+      </p>
+    </form>
     <Footer></Footer>
   </div>
 </template>
@@ -89,5 +116,24 @@ export default {
   justify-content: center;
   align-content: space-around;
   margin-bottom: 100px;
+}
+.test-form {
+  text-align: left;
+  font-size: 20px;
+  margin: 50px 30px 100px;
+}
+.test-form-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+}
+.test-form-input {
+  font-size: 16px;
+  padding: 6px;
+}
+.test-form-submit {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 </style>
