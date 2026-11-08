@@ -5,16 +5,16 @@
     ></title-label>
     <div class="news-all">
       <news-card
+        :news-date="'2026/11/07'"
+        :news-title-ja="'赤村文化祭'"
+        :news-title-en="'Akamura Culture Festival'"
+        :news-picture="'IMG_1374.jpg'">
+      </news-card>
+      <news-card
         :news-date="'2026/11/01'"
         :news-title-ja="'第18回TAGAWAコールマイン・フェスティバル'"
         :news-title-en="'18th TAGAWA Coal Mine Festival'"
         :news-picture="'IMG_1330.jpg'">
-      </news-card>
-      <news-card
-        :news-date="'2026/10/17'"
-        :news-title-ja="'第41回ふくしまつり'"
-        :news-title-en="'41st Fukushi Festival'"
-        :news-picture="'IMG_1238.jpg'">
       </news-card>
     </div>
     <detail-button
